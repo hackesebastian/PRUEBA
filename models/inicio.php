@@ -28,14 +28,7 @@
         </div>
         <div class="mb-2">
             <label for="Tdocumento" class="form-label">TIPO DE DOCUMENTO</label>
-            <select name="Tdocumento" id="TdocumentoS">
-                <option value="CC">CC</option>
-                <option value="TI">TI</option>
-                <option value="NIT">NIT</option>
-                <option value="NIP">NIP</option>
-                <option value="PAP">PAP</option>
-                <option value="RC">RC</option>
-            </select>
+            
             <div id="emailHelp" class="form-text">Selecione una opcion</div>
         </div>
         <div class="mb-2">

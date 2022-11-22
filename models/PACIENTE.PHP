@@ -20,50 +20,7 @@
   require_once "config/conexion.php";
 
 ?>
-<div class=" table-responsive container-fluid row p-4">
-        <table class="table table-striped">
-                <thead class="bg-info">
-                    <tr>
-                    <th scope="col">CANTIDAD</th>
-                    <th scope="col">ID</th>
-                    <th scope="col">TIPO DE DOCUMENTO</th>
-                    <th scope="col">NO DOCUMENTO</th>
-                    <th scope="col">NOMBRES</th>
-                    <th scope="col">APELLIDOS</th>
-                    <th scope="col">FECHA N</th>
-                    <th scope="col">EMAIL</th>
-                    <th scope="col"></th>
-                    
-                    
-                    </tr>
-                </thead>
-                <tbody>
 
-                    <?php foreach($registros as $fila) : ?>
-                    <?php $cantidad = $cantidad + 1 ?>
-                        <tr>
-                            <th><?php echo $cantidad; ?></th>
-                            <td><?php echo $fila->ID; ?></td>
-                            <td><?php echo $fila->TIPO_DOCUMENTO; ?></td>
-                            <td><?php echo $fila->NO_DOCUMENTO; ?></td>
-                            <td><?php echo $fila->NOMBRES; ?></td>
-                            <td><?php echo $fila->APELLIDOS; ?></td>
-                            <td><?php echo $fila->FEC_NACIMIENTO; ?></td>
-                            <td><a href=""><?php echo $fila->EMAIL; ?></a></td>
-                           
-                            <td>
-                            <a href="controller/editar.php?id=<?php echo $cantidad;?>"><i class="fa-regular fa-pen-to-square"></i></a>
-                            </td>
-                            <td>
-                            <a onclick="return confirmDelete()" href="controller/borrar.php?id=<?php echo $cantidad;?>"><i class="fa-solid fa-trash"></i></a>
-                            </td>
-                        </tr> 
-                    <?php endforeach;?>
-                </tbody>
-        </table>
-
-
-    </div>
 
 
 
